@@ -2,7 +2,7 @@
   --bg-color: #010f02;
   --text-color: #fbf7d9;
   --secondary-bg: #090909;
-  --cont-width: 900px;
+  --cont-width: 1100px;
 }
 
 .chonburi-regular {
@@ -29,8 +29,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: var(--cont-width);
 }
-
 
 .p-card {
   display: inline-block;
@@ -38,11 +38,10 @@ body {
   border: 1px solid var(--text-color);
   border-radius: 10px;
   padding: 15px;
-  max-width: 900px;
   color: var(--text-color);
   width: auto;
   height: auto;
-  max-width: var(--cont-width);
+  max-width: 100%;
   line-height: 1.5;
 }
 
@@ -59,9 +58,13 @@ h2 {
   align-items: center;
   border-bottom: 2px solid var(--text-color);
   padding-bottom: 15px;
-  width: var(--cont-width);
+  width: 850px;
   min-width: 100px;
   justify-content: space-between;
+}
+
+.card-div {
+  width: 48%;
 }
 
 .inline-div {
