@@ -1,7 +1,7 @@
 :root {
   --bg-color: #010f06;
   --text-color: 	#D0FFFF;
-  --header-text-color: #B6FFDA;
+  --header-text-color: #66FFB2;
   --secondary-bg: #090909;
   --border-color: white;
   --cont-width: 1100px;
@@ -39,7 +39,7 @@ body {
   background-color: var(--secondary-bg);
   border: 1px solid var(--border-color);
   border-radius: 10px;
-  padding: 15px;
+  padding: 25px;
   color: var(--text-color);
   width: auto;
   height: auto;
@@ -113,4 +113,17 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.section-div {
+  width: var(--cont-width);
+}
+
+ul {
+  font-size: 19px;
+}
+
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
