@@ -35,15 +35,12 @@ body {
 }
 
 .p-card {
-  display: inline-block;
   background-color: var(--secondary-bg);
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 25px;
   color: var(--text-color);
-  width: auto;
-  height: auto;
-  max-width: 100%;
+  height: auto; /* keep it auto */
   line-height: 1.5;
 }
 
@@ -116,6 +113,7 @@ p {
 }
 
 .section-div {
+  margin: 50px 0 50px 0;
   width: var(--cont-width);
 }
 
