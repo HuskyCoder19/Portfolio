@@ -66,6 +66,7 @@ p {
 .header-div {
   background-color: black;
   padding: 40px 0 70px 0;
+  margin-bottom: 50px;
   border-bottom: 1px solid var(--border-color);
   color: var(--text-color);
 }
