@@ -18,7 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
     typeText();
 });
 
+// go to section div
 function goToSection(id) {
     const section = document.getElementById(id);
     section.scrollIntoView({ behavior: 'smooth' });
 }
+
+// download resume
+function downloadResume() {
+    const link = document.createElement('a');
+    link.href = '../assets/resume.pdf';
+    link.download = 'JeremiahKollodge_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
