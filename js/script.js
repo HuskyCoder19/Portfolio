@@ -17,3 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     typeText();
 });
+
+function goToSection(id) {
+    const section = document.getElementById(id);
+    section.scrollIntoView({ behavior: 'smooth' });
+}

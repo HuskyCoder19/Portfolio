@@ -5,6 +5,7 @@
   --secondary-bg: #090909;
   --border-color: white;
   --cont-width: 1100px;
+  --nav-height: 100px;
 }
 
 .chonburi-regular {
@@ -65,7 +66,8 @@ p {
 
 .header-div {
   background-color: black;
-  padding: 40px 0 70px 0;
+  padding-top: 140px;
+  padding-bottom: 70px;
   margin-bottom: 50px;
   border-bottom: 1px solid var(--border-color);
   color: var(--text-color);
@@ -114,7 +116,8 @@ p {
 }
 
 .section-div {
-  margin: 50px 0 50px 0;
+  scroll-margin-top: 120px;
+  margin: 60px 0 60px 0;
   width: var(--cont-width);
 }
 
@@ -135,4 +138,37 @@ a {
 
 a:hover {
   color: #2b86e0;
+}
+
+.navbar {
+  background-color: black !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: var(--nav-height);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.navbar-button {
+  border: none;
+  color: black;
+  background-color: var(--header-text-color);
+  font-size: 19px !important;
+  padding: 6px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: gold;
 }

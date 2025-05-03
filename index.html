@@ -13,7 +13,39 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <div class="container-fluid d-flex justify-content-center header-div">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <button class="navbar-button" onclick="goToSection('home')">Home</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="navbar-button" onclick="goToSection('about-me')">About Me</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="navbar-button" onclick="goToSection('services')">Services</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="navbar-button" onclick="goToSection('experience')">Experience</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="navbar-button" onclick="goToSection('skills')">Skills</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="navbar-button" onclick="goToSection('how-i-work')">How I Work</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="navbar-button" onclick="goToSection('contact')">Contact Me</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="navbar-button">Resume</button>
+                    </li>
+                    </ul>
+              </div>              
+        </div>
+    </nav>
+    <div class="container-fluid d-flex justify-content-center header-div" id="home">
         <div>
             <div class="prof-div">
                 <div>
@@ -38,7 +70,7 @@
     </div>
     <div class="container-md d-flex flex-column align-items-center">
         <div class="main-cont">
-            <div class="section-div">
+            <div class="section-div" id="about-me">
                 <h3>About Me</h3>
                 <div class="p-card mt-4">
                     <p>
@@ -55,7 +87,7 @@
                     </p>
                 </div>
             </div>
-            <div class="section-div">
+            <div class="section-div" id="services">
                 <h3>Services</h3>
                 <div class="mt-4 mb-4">
                     <p>
@@ -92,7 +124,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section-div">
+            <div class="section-div" id="experience">
                 <h3>Professional Experience</h3>
                 <div class="mt-4">
                     <h4>Space Dynamics Laboratory - <i>Software Engineer</i></h4>
@@ -117,7 +149,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section-div">
+            <div class="section-div" id="skills">
                 <h3>Skills</h3>
                 <div class="mt-4">
                     <p>I have years of experience working with various programming languages, frameworks, and DevOps tools within Windows and Linux operating systems. 
@@ -174,7 +206,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section-div">
+            <div class="section-div" id="how-i-work">
                 <h3>How I work</h3>
                 <div class="mt-4">
                     <h4>My develpoment process:</h4>
@@ -192,7 +224,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section-div">
+            <div class="section-div" id="contact">
                 <h3>Contact Me</h3>
                 <div class="mt-4">
                     <ul class="list-unstyled">
