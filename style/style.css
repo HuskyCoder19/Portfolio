@@ -6,6 +6,41 @@
   --border-color: white;
   --cont-width: 1100px;
   --nav-height: 100px;
+  --prof-width: 850px;
+  --h1-font-sz: 70px;
+  --h2-font-sz: 40px;
+  --h3-font-sz: 35px;
+  --p-font-sz: 20px;
+  --ul-font-sz: 19px;
+  --btn-font-sz: 19px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --cont-width: 90%;
+    --prof-width: 90%;
+    --h1-font-sz: 40px;
+    --h2-font-sz: 25px;
+    --h3-font-sz: 20px;
+    --p-font-sz: 17px;
+    --ul-font-sz: 15px;
+    --btn-font-sz: 15px;
+  }
+
+  .prof-div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .inline-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    visibility: hidden;
+  }
 }
 
 .chonburi-regular {
@@ -41,27 +76,27 @@ body {
   border-radius: 10px;
   padding: 25px;
   color: var(--text-color);
-  height: auto; /* keep it auto */
+  height: auto;
   line-height: 1.5;
 }
 
 h1 {
-  font-size: 70px;
+  font-size: var(--h1-font-sz);
   color: var(--header-text-color);
 }
 
 h2 {
-  font-size: 40px;
+  font-size: var(--h2-font-sz);
   color: #00FFC6;
 }
 
 h3 {
-  font-size: 35px;
+  font-size: var(--h3-font-sz);
   color: var(--header-text-color);
 }
 
 p {
-  font-size: 20px;
+  font-size: var(--p-font-sz);
 }
 
 .header-div {
@@ -82,16 +117,14 @@ p {
 
 .prof-div {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 2px solid var(--border-color);
   padding-bottom: 15px;
-  width: 850px;
+  width: var(--prof-width);
   min-width: 100px;
-  justify-content: space-between;
-}
-
-.card-div {
-  width: 48%;
+  gap: 1rem;
 }
 
 .inline-div {
@@ -129,7 +162,7 @@ p {
 }
 
 ul {
-  font-size: 19px;
+  font-size: var(--ul-font-sz);
 }
 
 li {
@@ -166,12 +199,11 @@ a:hover {
   border: none;
   color: black;
   background-color: var(--header-text-color);
-  font-size: 19px !important;
+  font-size: var(--btn-font-sz);
   padding: 6px 12px;
   border-radius: 3px;
   cursor: pointer;
   margin: 0 5px;
-  font-size: 1rem;
   transition: all 0.3s ease;
 }
 
