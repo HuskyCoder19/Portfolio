@@ -73,6 +73,13 @@ p {
   color: var(--text-color);
 }
 
+.footer-div {
+  background-color: black;
+  padding: 20px 0 20px 0;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
 .prof-div {
   display: flex;
   align-items: center;
@@ -152,8 +159,7 @@ a:hover {
 
 .navbar-nav {
   display: flex;
-  justify-content: center;
-  gap: 15px;
+  justify-content: space-between;
 }
 
 .navbar-button {
@@ -171,4 +177,8 @@ a:hover {
 
 .navbar-button:hover {
   background-color: gold;
+}
+
+.exp-sect {
+  margin-bottom: 50px;
 }
